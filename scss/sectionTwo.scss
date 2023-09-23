@@ -1,0 +1,105 @@
+.two {
+  position: relative;
+  width: 100%;
+  height: 595px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(102, 150, 226, 0.42), rgba(226, 120, 102, 0.42)),url(../images/img-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+    .buttons{    
+      margin-left: 151px;
+      margin-right: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .buttonLink{
+        background: $color-14;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 3px 6px $color-7;
+        border: none;
+      }
+      h2{
+        font-size: 14px;
+        opacity: 0.5;
+        color: $color-2;
+        transform: rotate(-45deg);
+      }
+    }
+    .buttonLink:hover{
+      cursor: pointer;
+      background: $color-6;
+      h2{
+        opacity: 1;
+      }
+    }
+    .left2{
+      display: flex;
+      align-items: center;
+    }
+    .middle2{
+      margin-right: 300px;
+      width: 517px;
+      height: 295px;
+    }
+    .right2{
+      position: relative;
+      display: flex;
+      padding-right: 100px;
+      height: 350px;
+      width: 362px;
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        height: 300px;
+      }
+      .imgBox {
+        background: $color-6;
+        width: 167px;
+        height: 167px;
+      }
+      
+      .imgContainer {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .imgContainer img {
+        margin-top: -6px;
+      }
+      .imgBox:nth-child(3) {
+        width: 364px;
+        height: 177px;
+        grid-column: span 2;
+      }
+    }
+    .imgBox img:hover {
+      cursor: pointer;
+      opacity: 0.4;
+    }
+    h1{
+      font-size: 36px;
+      color: $color-2;
+      margin-bottom: 33px;
+    }
+    p{
+      font-size: 14px;
+      color: $color-2;
+    }
+
+}

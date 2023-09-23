@@ -1,0 +1,114 @@
+.five{
+    background: $color-3;
+    width: 100%;
+    height: 883px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+.up5{
+  margin-top: 97px;
+  margin-bottom: 83px;
+
+  h1{
+    color: $color-2;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+  .divider5{
+    background:url(../images/divider_green.png);
+    margin-left: 186px;
+    margin-bottom: 26px;
+    width: 64px;
+    height: 2px;
+  } 
+  p{
+    color: $color-2;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.down5{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 40px;
+}
+    .container {
+      background: $color-1;
+      width: 343px;
+      height: 456px;
+      border-radius: 5px;
+      position: relative;
+
+    .black{
+      text-align: center;
+
+    }
+      h3 {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        height: 59px;
+        color: $color-2;
+        padding-top: 14px;
+      }
+      
+      h2 {
+        position: relative;
+        color: $color-2;
+        font-size: 94px;
+        line-height: 1;
+        font-weight: 400;
+        height: 100px;
+      }
+      h2 span {
+        font-size: 30%; 
+        position: absolute;
+        left: 110px;
+        top: 60px;
+      }
+      p{
+        color: $color-2;
+        opacity: 50%;
+        font-size: 14px;
+        padding-top: 14px;
+        height: 51px;
+      }
+    }
+    .middle{
+      height: 490px;
+      .green {
+        height: 40px;
+        position: relative;
+
+        p{
+          padding: 10px;
+          color: $color-2;
+          text-align: center;
+          font-size: 14px;
+          opacity: 100%;
+        }
+      }
+    }
+    .green{
+      background: $color-4;
+      height: 6px;
+    }
+    .radius{
+      border-radius: 0 0 5px 5px;
+    }
+    li{
+      list-style: none;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      background: $color-2;
+      color: $color-5;
+      height: 40px;
+    }
+} 
+
