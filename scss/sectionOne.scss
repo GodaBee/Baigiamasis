@@ -63,8 +63,6 @@
     border-radius: 5px;
     
    .free{
-    display: flex;
-    justify-content: center;
     background: $color-10;
     width: 360px;
     height: 57px;
@@ -83,9 +81,24 @@
       padding-right: 5px;
       color: $color-6;
     }
-    form{
+    h3{
+      margin-top: 30px;
+      margin-left: 50px;
+      margin-bottom: 22px;
+    }
+    .form-container {
       display: flex;
       flex-direction: column;
-      padding: 30px;
+      padding: 20px;
+    }
+  
+    .subscription-options {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    /* Optional: Add some margin between radio choices */
+    .subscription-options label {
+      margin-right: 20px;
     }
   }  
