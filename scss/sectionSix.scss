@@ -4,16 +4,14 @@
     height: 591px;
 
     .up6{
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       margin-bottom: 58px;
 
       h1{
+        @include font-36-600;
         margin-top: 67px;
         margin-bottom: 31px;
-        font-size: 36px;
-        line-height: 43px;
       }
       .divider6{
         width: 64px;

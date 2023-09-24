@@ -1,7 +1,6 @@
 
   .four {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     background: $color-2;
     width: 100%;
@@ -12,8 +11,7 @@
     h1{
         margin-top: 99px;
         color: $color-13;
-        font-size: 36px;
-        line-height: 43px;
+        @include font-36-600;
     }
 
     .divider3{
@@ -37,8 +35,7 @@
     gap: 100px;
 
     .medal{
-        display: flex;
-        flex-direction: column;
+      @include flex-column;
         align-items: center;
         text-align: center;
         width: 286px;
@@ -60,9 +57,7 @@
     }
 
     .medal1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      @include flex-center;
         border:2px solid $color-6;
         margin-bottom: 27px;
         width: 50px;

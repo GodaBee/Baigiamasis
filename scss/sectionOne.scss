@@ -6,8 +6,7 @@
     width: 100%;
     height: 639px;
     margin-top: 72px;
-    display: flex;
-    justify-content: space-between;
+    @include flex-space-between;
   } 
   .left1{
     margin-top: 65px;
@@ -25,9 +24,7 @@
     width: 426px;
     height: 87px;
     text-align: left;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 43px;
+  @include font-36-600;
   }
   .divider {
     background:url(../images/divider_white_u72.png);
@@ -70,8 +67,7 @@
     gap: 5px;
    }
     h2{
-      display: flex;
-      justify-content: center;
+      @include flex-center;
       padding-top: 17px;
       font-size: 20px;
       line-height: 24px;
@@ -88,13 +84,10 @@
       margin-bottom: 22px;
     }
     .form-container {
-      display: flex;
-      flex-direction: column;
       width: 260px;
     }
     .information {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       gap: 30px;
       margin-left: 51px;
       input{
@@ -104,8 +97,7 @@
     }
   
     .subscription-options {
-      display: flex;
-      flex-direction: row;
+      @include flex-row;
       margin-bottom: 48px;
       margin-left: 51px;
 
