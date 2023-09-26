@@ -15,13 +15,38 @@
     display: flex;
     flex-direction: row;
   }
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  }
 
  @mixin font-36-600{
     font-size: 36px;
     font-weight: 600;
     line-height: 43px;
  }
+ @mixin font-14-lh-20{
+    font-size: 14px;
+    line-height: 20px;
+ }
+ @mixin font-20-lh-24{
+    font-size: 20px;
+    line-height: 24px;
+ }
+ @mixin font-14-lh-17{
+  font-size: 14px;
+  line-height: 17px;
+ }
  
  @mixin mobile-margin{
   margin: 10px 0 10px 20px;
+ }
+ @mixin w50-h50{
+  width: 50px;
+  height: 50px;
+ }
+ @mixin Bg-position{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
  }

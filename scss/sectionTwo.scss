@@ -5,9 +5,7 @@
   display: flex;
   align-items: center;
   background: linear-gradient(rgba(102, 150, 226, 0.42), rgba(226, 120, 102, 0.42)), url(../images/img-2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include Bg-position;
 
   .buttons {
     margin-left: 151px;
@@ -23,7 +21,7 @@
       border: none;
 
       h2 {
-        font-size: 14px;
+        @include font-14-lh-17;
         opacity: 0.5;
         color: $color-2;
         transform: rotate(-45deg);
@@ -95,7 +93,7 @@
         transition: opacity 0.3s;
 
         h1 {
-          font-size: 24px;
+          @include font-20-lh-24;
           color: $color-2;
         }
       }
@@ -125,7 +123,7 @@
   }
 
   p {
-    font-size: 14px;
+    @include font-14-lh-17;
     color: $color-2;
   }
 }

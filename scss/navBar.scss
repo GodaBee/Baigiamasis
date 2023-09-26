@@ -17,12 +17,15 @@
       li{
         list-style: none;
         color: $color-2;
-        opacity: 69%;
+        
       }
       
       a{
+        @include font-14-lh-17;
         text-decoration: none;
         color: $color-2;
+        text-align: right;
+        opacity: 0.63;
       }
       a:hover{
         cursor: pointer;
