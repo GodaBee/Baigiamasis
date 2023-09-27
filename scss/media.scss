@@ -10,33 +10,17 @@
        }
     .one .navBar{
         justify-content:left;
-        position: relative !important;
     }
     .one{
-        nav {
-            width: 100%;
-            height: auto !important;
-            padding: 10px !important;
+        .lists {
+            display: none;
         }
-        nav ul {
-            display: block !important;
-            margin: 0 !important;
-            margin-left: 30px !important;
+        
+        #burger {
+            display: block;
+            color: $color-2;
         }
-        nav li {
-            font-size: 15px;
-            a:hover {
-                cursor: pointer;
-                opacity: 100%;
-            
-                &::after {
-                  transform: scaleX(0);
-                }
-              }
-        }
-        .navLogo {
-             @include mobile-margin;
-        }
+
     
         .box1{
             height: auto !important;
@@ -277,4 +261,5 @@
     }
    }
 }
+
 }

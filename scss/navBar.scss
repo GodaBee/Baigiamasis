@@ -9,8 +9,9 @@
     
       ul {
         @include flex-row;
+        justify-content: end;
+        margin-top: -40px;
         margin-right: 148px;
-        margin-top: 26px;
         gap: 44px;
       }
     
@@ -19,8 +20,17 @@
         color: $color-2;
         position: relative;
       }
+      #burger {
+        display: none;
+        margin-top: -35px;
+        margin-left: 50px;
+        color: $color-2;
+        transition: 0.3s;
+        width: 20px;
+        height: 20px;
+    }
     
-      a {
+      a{
         @include font-14-lh-17;
         text-decoration: none;
         color: $color-2;
@@ -50,16 +60,31 @@
           transform: scaleX(1);
         }
       }
-    
-      .navBar {
-        @include flex-space-between;
-      }
+
     
       .navLogo {
         margin-left: 147px;
         margin-top: 10px;
       }
+      .list2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 130px;
+        height: 40vh;
+        background: $color-1;
+        padding-top: 50px;
+        transform: translateX(-300vh);
+        transition: 0.3s;
     }
+      .translate {
+        transform: translateX(0%);
+    }
+      .rotate {
+        transform: rotate(-180deg);
+    }
+  }
     
   
     

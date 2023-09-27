@@ -33,8 +33,7 @@
   }
 
   });
-  
-  // You can also add custom logic for changing slides with mouse events
-  swiperContainer.addEventListener('mousedown', () => {
-    swiper.slideNext(); // Go to the next slide on mouse click
-  });
+
+  // swiperContainer.addEventListener('mousedown', () => {
+  //   swiper.slideNext();
+  // });
