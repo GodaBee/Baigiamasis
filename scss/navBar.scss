@@ -1,46 +1,67 @@
-
-    nav{
+    
+    nav {
       position: fixed;
       top: 0;
-      overflow: hidden;
       background: $color-1;
       width: 100%;
       height: 72px;
       z-index: 1;
     
-      ul{
+      ul {
         @include flex-row;
         margin-right: 148px;
         margin-top: 26px;
         gap: 44px;
       }
-      li{
+    
+      li {
         list-style: none;
         color: $color-2;
-        
+        position: relative;
       }
-      
-      a{
+    
+      a {
         @include font-14-lh-17;
         text-decoration: none;
         color: $color-2;
         text-align: right;
         opacity: 0.63;
+        position: relative;
+        transition: 0.3s; 
       }
-      a:hover{
+    
+      a::after {
+        content: "";
+        position: absolute;
+        bottom: -27px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-6;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+      a:hover {
         cursor: pointer;
-        background: $color-6;
-        color: $color-10;
-        text-shadow: 0 0 5px black;
         opacity: 100%;
-        border-radius: 5px;
-        box-shadow: 0 0 5px white;
+    
+        &::after {
+          transform: scaleX(1);
+        }
       }
-      .navBar{
+    
+      .navBar {
         @include flex-space-between;
       }
-        .navLogo{
-          margin-left: 147px;
-          margin-top: 10px;
+    
+      .navLogo {
+        margin-left: 147px;
+        margin-top: 10px;
       }
     }
+    
+  
+    
+
+     
